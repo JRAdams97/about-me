@@ -15,7 +15,7 @@ export default function Home(): JSX.Element {
                     <Hero />
                 </section>
             </main>
-            <section id="about" className="bg-blue-700">
+            <section id="about" className="bg-gray-200">
                 <About />
             </section>
             <section id="skills" className="bg-yellow-700">
