@@ -1,12 +1,24 @@
 import React from 'react';
+import SkillCell from '@/components/SkillCell';
 
-export default function Skills(): JSX.Element {
+export default function Skills() {
     return (
-        <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-            <div className="mr-auto place-self-center lg:col-span-7">
-                <h2 className="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-                    Skills
-                </h2>
+        <div className="m-auto container py-16 md:py-20" id="services">
+            <h2 className="text-center font-header text-4xl font-bold uppercase text-primary sm:text-5xl lg:text-6xl">
+                My Skillset
+            </h2>
+            <h4 className="pt-6 font-header text-center text-xl font-medium text-gray-500 sm:text-2xl lg:text-3xl">
+                Here's What I'm Good At...
+            </h4>
+            <div className="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-4">
+                <SkillCell name="webApplications" shadow="inner" />
+                <SkillCell name="microservices" shadow="lg" />
+                <SkillCell name="cloud" shadow="xl" />
+                <SkillCell name="data" shadow="lg" />
+                <SkillCell name="automation" shadow="lg" />
+                <SkillCell name="testing" shadow="xl" />
+                <SkillCell name="communication" shadow="lg" />
+                <SkillCell name="writing" shadow="xl" />
             </div>
         </div>
     );
